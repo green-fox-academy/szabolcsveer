@@ -5,34 +5,33 @@ let out: number = 0;
 
 // if a is even increment out by one
 if(a%2 === 0) {
-    console.log(out + 1);
+    out ++;
 }
 else {
     console.log("This is NOT an even number");
 }
 console.log(out);
 
-let b: number = 13;
-let out2: string = '';
-
-if (b > 10 && b < 20) {
-    out2 = "Sweet!";
-}
-else if (b < 10) {
-    console.log(out2 = "Less!");
-}
-else if (b > 20) {
-    out2 = "More!";
-}
 // if b is between 10 and 20 set out2 to "Sweet!"
 // if less than 10 set out2 to "Less!",
 // if more than 20 set out2 to "More!"
 
-console.log(out2);
+let b: number = 22;
+let out2: string = '';
 
-let c: number = 123;
-let credits: number = 100;
-let isBonus: boolean = false;
+if (b > 10 && b < 20) 
+{
+    out2 = "Sweet!";
+}
+else if(b < 10)
+{
+    out2 = "Less!";
+}  
+else
+{
+    out2 = "More!";
+} 
+console.log(out2);
 
 // if credits are at least 50,
 // and is_bonus is false decrement c by 2
@@ -40,9 +39,20 @@ let isBonus: boolean = false;
 // and is_bonus is false decrement c by 1
 // if is_bonus is true c should remain the same
 
+let c: number = 21;
+let credits: number = 49;
+let isBonus: boolean = true;
+
+if (credits >= 50 && !isBonus ) {
+    c-=2;
+}else if (credits < 50  && !isBonus) {
+    c--;
+}
+
+
 console.log(c);
 
-let d: number =  8;
+let d: number =  9;
 let time: number = 120;
 let out3: string = '';
 
@@ -53,4 +63,11 @@ let out3: string = '';
 // set out3 to "Time out"
 // otherwise set out3 to "Run Forest Run!"
 
+if (d%4 == 0 && time < 200) {
+    out3 = "check";
+}else if (time > 200) {
+    out3 = "Time out";
+}else {
+    out3 = "Run Forest Run!"
+}
 console.log(out3);
