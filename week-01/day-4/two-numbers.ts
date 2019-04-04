@@ -1,3 +1,4 @@
+'use strict';
 let numberOne = 22;
 let numberTwo = 13;
 
