@@ -6,12 +6,9 @@
 // Your height in meters as a number
 // Whether you are married or not as a boolean
 
-let chocolateBar: string = "Tasty!";
-let dailySpending: number = 2500;
-let theSkyIsBlue: any = true;
 
-console.log(chocolateBar);
-console.log(dailySpending);
-console.log(theSkyIsBlue);
 
-let myNameIs: string = "Szabika"
+let myNameIs: string = "Szabika";
+let myAgeIs: number = 32;
+let myHeightIs: any = 1.78m;
+let maritalStatus: boolean = false;
