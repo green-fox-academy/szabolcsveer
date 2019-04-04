@@ -8,5 +8,5 @@ a = a + b;
 b = a - b;
 a = a - b;
 
-console.log(a);
-console.log(b);
+console.log("a swapped to b: " + a);
+console.log("b swapped to a: " + b);
