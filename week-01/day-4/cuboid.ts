@@ -6,6 +6,13 @@
 // Surface Area: 600
 // Volume: 1000
 
-let a: number = 
-let b: number =
-let c: number =
+let a: number = 10;
+let b: number = 10;
+let c: number = 10;
+
+let volume: number = a * b * c;
+
+let area: number = 6* a**2;
+
+console.log("This is the Volume of the Cuboid: " + volume);
+console.log("This is the Surface Area of the Cuboid: " + area);
