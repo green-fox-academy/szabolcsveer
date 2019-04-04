@@ -10,3 +10,8 @@ let chocolateBar: string = "Tasty!";
 let dailySpending: number = 2500;
 let theSkyIsBlue: any = true;
 
+console.log(chocolateBar);
+console.log(dailySpending);
+console.log(theSkyIsBlue);
+
+let myNameIs: string = "Szabika"
