@@ -1,6 +1,6 @@
 'use strict';
 
-var lineCount: number = 44;
+var lineCount: number = 14;
 
 // Write a program that draws a
 // pyramid like this:
