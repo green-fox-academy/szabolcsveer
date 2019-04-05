@@ -6,10 +6,9 @@
 
 let input: number = 5;
 let Sum: number = 0;
-for (var index = 1; index <input; index++) {
+for (var index = 1; index <= input; index++) {
     Sum += index
     
 }
-console.log("Sum: " +Sum);
-console.log("Average: " + (Sum/index));
-console.log(index)
+console.log("Sum: " + Sum);
+console.log("Average: " + (Sum/input));
