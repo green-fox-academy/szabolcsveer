@@ -11,3 +11,4 @@ function doubling(baseNum: number): number {
 }
 
 console.log("BaseNumber doubled: " + doubling(baseNum));
+
