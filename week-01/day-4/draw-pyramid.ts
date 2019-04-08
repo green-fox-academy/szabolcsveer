@@ -25,3 +25,4 @@ for (var index = 0; index < lineCount; index++) {
     
     console.log(empty);
 }
+  

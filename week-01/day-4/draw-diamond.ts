@@ -19,9 +19,9 @@ let lineCount: number = 7;
 //
 // The diamond should have as many lines as lineCount is
 
-for (let i = 1; i <= lineCount; i++) {
+for (let i = 0; i < lineCount; i++) {
     let empty: any = "";
-    for (let j = 1; j <=lineCount-i; j++) {
+    for (let j = 1; j < lineCount-i; j++) {
     empty = empty + " ";
     }
     for(let k = 1; k < (2*i-1); k++){
@@ -29,7 +29,10 @@ for (let i = 1; i <= lineCount; i++) {
     }
     console.log(empty);
 }
-// for(let i = 1)
+if (lineCount%2 === 0){
+
+}
+
 
 
 
