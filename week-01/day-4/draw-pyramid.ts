@@ -1,6 +1,6 @@
 'use strict';
 
-var lineCount: number = 14;
+var lineCount: number = 4;
 
 // Write a program that draws a
 // pyramid like this:
@@ -25,5 +25,3 @@ for (var index = 0; index < lineCount; index++) {
     
     console.log(empty);
 }
-
-
