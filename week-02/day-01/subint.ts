@@ -5,7 +5,21 @@
 //  Or returns an empty list if the number is not part of any of the numbers in the array
 
 // Example
-console.log(subint(1, [1, 11, 34, 52, 61]));
+// console.log(subint(1, [1, 11, 34, 52, 61]));
 // should print: `[0, 1, 4]`
-console.log(subint(9, [1, 11, 34, 52, 61]));
+// console.log(subint(9, [1, 11, 34, 52, 61]));
 // should print: '[]'
+
+let number = 1;
+let array = [1, 11, 34, 52, 61];
+let arrayWith = [];
+function numPlusArr(number, array){
+    array.forEach((element, index) => {
+    console.log(index);
+    });
+    
+
+}
+console.log(numPlusArr(number,array));
+
+export {}
