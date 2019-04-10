@@ -10,7 +10,7 @@ const ctx = canvas.getContext('2d');
 
 
 
-function steps(x){
+function steps(x: number){
     ctx.fillStyle = "purple";
     ctx.fillRect(x,x,20,20);
     ctx.strokeRect(x,x,20,20);
