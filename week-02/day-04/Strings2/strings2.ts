@@ -3,13 +3,13 @@
 // Strings again
 // Given a string, compute recursively a new string where all the 'x' chars have been removed.
 
-function removeX(str: string):string{
-    if(str.indexOf('x') === -1){
-        return str;
+function removeX(input: string):string{
+    if(input.indexOf('x') === -1){
+        return input;
 
     }
-    str = str.replace('x',' ');
-    return removeX(str);
+    input = input.replace('x','');
+    return removeX(input);
 
 
 }
