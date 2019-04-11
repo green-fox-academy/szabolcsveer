@@ -25,3 +25,4 @@ function decryptor(objectName){
 }
 decryptor(hashmap);
 console.log(out);
+
