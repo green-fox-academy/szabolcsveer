@@ -11,4 +11,5 @@ function divisor(n,z){
 
 }
 
-console.log(divisor(15,4));
+console.log(divisor(15,5));
+
