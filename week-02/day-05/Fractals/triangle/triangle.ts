@@ -14,8 +14,8 @@ function triangle(x,y,len){
     ctx.moveTo(x,y);
     ctx.lineTo(x + len/2, y + len);
     // the outline
-    ctx.lineWidth = 1;
-    ctx.strokeStyle = 'black';
+    // ctx.lineWidth = 1;
+    
     ctx.moveTo(x + len/2, y + len);
     ctx.lineTo(x + len,y);
     ctx.moveTo(x + len,y);
@@ -25,6 +25,7 @@ function triangle(x,y,len){
     triangle(x,y,len/2);
     triangle(x + len/2,y,len/2);
     triangle(x+ len/4,y+len/2,len/2);
+    
     
 
     

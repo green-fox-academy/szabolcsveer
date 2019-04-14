@@ -21,21 +21,30 @@ let lineCount: number = 7;
 
 for (let i = 0; i < lineCount; i++) {
     let empty: any = "";
-    for (let j = 1; j < lineCount-i; j++) {
+    for (let j = 0; j < lineCount-i; j++) {
     empty = empty + " ";
     }
-    for(let k = 1; k < (2*i-1); k++){
+    for(let k = 0; k < (2*i-1); k++){
     empty = empty + "*";
     }
+
+
     console.log(empty);
-}
-if (lineCount%2 === 0){
+
+    if (i > lineCount/2){
+        for (let j = 0; j < lineCount+i; j--) {
+            empty = empty + " ";
+            for(let k = 0; k < (2*i-1); k++){
+                empty = empty + "*";
+                }
+                
+        
+        }
+    console.log(empty);        
+
+    }
+
 
 }
 
-
-
-
-
-
-export {}
+   
