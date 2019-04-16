@@ -9,17 +9,14 @@
 
 let n;
 function divider(n:any): any{
-  let result = n/10;
-  return result;
-}
 try {
-  divider(n);
   if( n == 0 ){
-    
+    throw Error('Fail');
+  }else{
+    return n/10;
   }
-  throw Error('Fail');
 }
 catch(e){
-  console.log(e.message);
-}
+console.log(e.message);
+}}
 console.log(divider(0));
