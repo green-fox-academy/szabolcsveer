@@ -7,10 +7,11 @@ export{}
 
 const fs = require('fs');
 
-function fileCopy(soruce,destination){
-  fs.copyFileSync(soruce,destination)
-  return true
+function fileCopy(source,destination){
+  let newfile = fs.readFileSync(source,'UTF-8')
+  fs.writeFileSync(destination,newfile)
+  return true;
 }
 
-console.log(fileCopy('my-file.txt','newfile.txt'))
+console.log(fileCopy('my-file1.txt','mynewfile.txt'))
 
