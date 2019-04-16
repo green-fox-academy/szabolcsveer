@@ -13,10 +13,11 @@ export{}
 const fs = require('fs');
 
 function myFunc(path:string,word:string, num:number){
-  
+  try{
   for(let i= 1; i <=num;i++){
     fs.appendFileSync(path,word +"\n");
-  }
+  }}
+  catch(e){}
   
 }
 
