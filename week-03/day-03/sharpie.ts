@@ -21,6 +21,6 @@ class Sharpie {
 
 }
 
-const toll1: Sharpie = new Sharpie('blue',0.8)
+const toll1: Sharpie = new Sharpie('blue',0.8);
 
 toll1.use();
