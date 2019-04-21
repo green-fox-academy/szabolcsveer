@@ -19,32 +19,34 @@ let lineCount: number = 7;
 //
 // The diamond should have as many lines as lineCount is
 
-for (let i = 0; i < lineCount; i++) {
-    let empty: any = "";
-    for (let j = 0; j < lineCount-i; j++) {
-    empty = empty + " ";
+function repeated(what, howMany) {
+    return what.repeat(howMany);
+  }
+
+if (lineCount % 2 === 1) {
+    const halfLineCount = Math.floor(lineCount / 2);
+    const spacer = ' ';
+    const star = '*';
+  
+    // upper section
+    for (let i = halfLineCount; i > 0; i--) {
+      console.log(
+        repeated(spacer, i),
+        repeated(star, lineCount - 2 * i),
+        repeated(spacer, i),
+      );
     }
-    for(let k = 0; k < (2*i-1); k++){
-    empty = empty + "*";
-    }
-
-
-    console.log(empty);
-
-    if (i > lineCount/2){
-        for (let j = 0; j < lineCount+i; j--) {
-            empty = empty + " ";
-            for(let k = 0; k < (2*i-1); k++){
-                empty = empty + "*";
-                }
-                
-        
-        }
-    console.log(empty);        
-
-    }
-
-
-}
-
-   
+  
+    // middle line
+    console.log(
+      repeated(star, lineCount),
+    );
+  
+    // lower section
+    for (let i = 1; i < halfLineCount + 1; i++) {
+      console.log(
+        repeated(spacer, i),
+        repeated(star, lineCount - 2 * i),
+        repeated(spacer, i),
+      );
+    }}
