@@ -16,10 +16,13 @@ let lineCount: number = 6;
 
 let symbol: any = "%";
 
-for(let i = 0; i < lineCount; i++){
-    for(let j = 0; j < lineCount; j++){
-    console.log(symbol);}
-    console.log("\n")
+for(let i = 1; i <=lineCount; i++){
+   if(i==1 || i == lineCount){
+    console.log(symbol.repeat(lineCount))
+   }else{
+       console.log(symbol + " ".repeat(lineCount -2) + symbol)
+   }
+    
 }
 
 
