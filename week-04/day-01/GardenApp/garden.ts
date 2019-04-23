@@ -19,12 +19,13 @@ class Garden{
   }
 
   waterPlants(water){
+    let divisor: number = water/(this.flowers.length + this.trees.length)
     this.flowers.forEach(i => {
-      i.waterFlowers(water);
+      i.waterFlowers(divisor);
       
     });
     this.trees.forEach(i => {
-      i.waterTrees(water);
+      i.waterTrees(divisor);
     } )
 
   }
