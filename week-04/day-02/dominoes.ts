@@ -1,6 +1,7 @@
 'use strict';
 
 import {Domino} from "./domino";
+import {Printable} from './Printable/printable';
 
 function initializeDominoes(): Domino[] {
     let dominoes = [];

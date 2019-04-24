@@ -2,6 +2,7 @@
 
 import {Domino} from './domino'
 
+
 interface Comparable {
   compareTo(other: Comparable): number
     // values: number[];

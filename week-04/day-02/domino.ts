@@ -1,8 +1,13 @@
 'use strict';
 
 import {Comparable} from './comparable'
+import { Thing } from './things'
+import {Printable} from './Printable/printable'
 
-class Domino implements Comparable {
+
+class Domino implements Comparable,Printable {
+  PrintAllFields(){}
+
   compareTo(other: Domino): number{
     if(this.values[0] < other.values[0]){
       return -1
