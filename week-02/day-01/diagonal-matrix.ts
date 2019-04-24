@@ -40,3 +40,5 @@ function createMatrix(size: number): void {
     }
         console.log(matrix);
 }
+
+export{}

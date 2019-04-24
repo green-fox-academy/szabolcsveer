@@ -4,7 +4,7 @@ export{}
 import {Tree} from './tree';
 import {Flower} from './flower';
 import {Plants} from './plants';
-import { Z_TREES } from 'zlib';
+
 
 
 class Garden{
@@ -25,7 +25,8 @@ class Garden{
       
     });
     this.trees.forEach(i => {
-      i.waterTrees(divisor);
+      i.waterTrees(divisor
+        );
     } )
 
   }
