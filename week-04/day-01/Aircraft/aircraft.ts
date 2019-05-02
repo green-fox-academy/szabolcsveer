@@ -16,18 +16,25 @@ class Aircraft{
 
   }
 
-  fight(){
+  fight(): number{
     this.damage = this.ammo * this.baseDamage;
     this.ammo = 0;
     return this.damage;
     
   }
 
-  refill(number){
-    this.ammo - number > 0
-    this.ammo <= number || this.maxAmmo
-
-  }
+  refill(ammoAmount: number): number{
+    let freeSlots: number = this.maxAmmo - this.ammo
+    if(ammoAmount <= 0){
+      return 0
+    }
+    if (ammoAmount < freeSlots){
+      this.ammo += ammoAmount
+      return 0
+    }else{
+      this.ammo = this.maxAmmo
+    return ammoAmount - freeSlots
+  }}
 
   getType(): string{
     return this.type
