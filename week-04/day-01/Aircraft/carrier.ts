@@ -62,7 +62,7 @@ getStatus(){
   if(this.health != 0){
     let totalDamage = 0;
     for(let i = 0; i < this.carrier.length; i++){
-      totalDamage = this.carrier[i].ammo * this.carrier[i].baseDamage
+      totalDamage += this.carrier[i].ammo * this.carrier[i].baseDamage
     }
     console.log(`HP: ${this.health}, Aircraft count: ${this.carrier.length},Ammo storage: ${this.ammoStorage} Total Damage: ${totalDamage}`);
     console.log('Aircrafts:');
@@ -78,4 +78,6 @@ getStatus(){
 }
 
 }
+
+
 
