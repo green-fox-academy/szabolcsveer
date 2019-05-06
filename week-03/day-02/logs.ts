@@ -14,25 +14,26 @@ let fs = require('fs');
 
 function returnIP(file){
   let new1 = fs.readFileSync(file,'utf-8');
+  new1 = new1.replace(/[/\r]/g,'')
+  console.log(new1);
+  
   let splitByLines = new1.split('\n')
   let ip: any[] = []
   let arr: any[] = []
-  arr.forEach(element => { element.replace(' /', '')}); 
   
-  console.log(arr)
     let postAndGet: string [] = []
     for (let i: number = 0; i < splitByLines.length; i++) {
-        
         arr.push(splitByLines[i].split('   '))
-        
         ip.push(arr[i][1])
         postAndGet.push(arr[i][2])
       }
+      console.log(arr);
       
       const uniqueIps = ip.filter((v, i, a) => a.indexOf(v) === i); 
+      // console.log(uniqueIps);
       
-      const getNum = postAndGet.filter(x => x === 'GET').length 
-      const postNum = postAndGet.filter(x => x === 'POST').length;
+      const getNum = postAndGet.filter(x => x === 'GET ').length
+      const postNum = postAndGet.filter(x => x === 'POST ').length;
       
       console.log(getNum,postNum);
       
