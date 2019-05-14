@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  /* width: 100%; */
+  padding: 0%;
+  margin: 0%;
+  background-color: rgb(255,215,42);
+  height: 40vh;
+  /* width: 100vw; */
+  justify-content: flex-end;
+  border: 5vh solid white;
+  
+}
+
+
+
+.purple {
+  background-color: rgb(176,41,255);
+  z-index: 1;
+  height: 100px;
+  width: 100px;
+  align-self: flex-end;
+  padding: 0%;
+  margin: 0%;
+}
+
+.item {
+  margin-left: 1%;
+  padding-left: 1%;
+}
+
+body{
+  
+  padding: 0%;
+  margin: 0%;
+}
