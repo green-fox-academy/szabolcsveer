@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  width: 100%;
+  height: 80vh;
+  padding: 8vh;
+  flex-direction: column;
+  padding: 0%;
+  margin: 0%;
+}
+
+
+.green{
+  background-color: rgb(82,212,0);
+  order: 1;
+  flex-grow: 1;
+
+}
+.yellow{
+  background-color: rgb(255,215,42);
+  order: 3;
+  flex-grow: 4;
+  
+}
+.purple {
+  background-color: rgb(176,41,255);
+  order: 2;
+  flex-grow: 1;
+}
+
+.item {
+  align-self: flex-end;
+  height: 20vh;
+  width: 100%;
+  padding: 0%;
+  margin: 0%;
+}
+
+body{
+  padding: 0%;
+  margin: 0%;
+}
