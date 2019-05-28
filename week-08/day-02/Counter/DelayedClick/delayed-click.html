@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Delayed Click</title>
+</head>
+<body>
+  <button>HIT ME</button>
+  <h1></h1>
+
+  <script>
+    const btn = document.querySelector('button');
+    const h1 = document.querySelector('h1');
+
+    
+    const event = () =>{
+      setTimeout(() => h1.innerHTML = "2 seconds elapsed", 2000);
+    }
+    
+    btn.addEventListener('click',event)
+  </script>
+</body>
+</html>
