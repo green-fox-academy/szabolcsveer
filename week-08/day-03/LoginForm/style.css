@@ -1,0 +1,27 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: rgb(189, 226, 250);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  height: 40vh;
+  padding: 50px;
+  margin: 50px;
+}
+
+button{
+  background-color: black;
+  border-radius: 5px;
+  width: 3rem;
+  color: white;
+}
+
+#password{
+  text-decoration: white;
+}
