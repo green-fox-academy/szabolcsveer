@@ -12,11 +12,12 @@
     <legend>ACCOUNT LOGIN</legend>
     <div>
       <label for="name">USERNAME</label>
-      <input type="text" id="name" name="username" autofocus>
+      <input type="text" id="name" name="login" placeholder="type username" autofocus>
     </div>
-    <div>
+    <div class=".passfield">
       <label for="password">PASSWORD</label>
-      <input type="password" id="password" name="password">
+      <img src="./eye-solid.svg" alt="eye">
+      <input type="password" id="password" name="login" placeholder="type password">
     </div>
     <a href="#">Forgot Password?</a>
     <button>
@@ -24,6 +25,25 @@
     </button>
 
   </form>
-  
+  <script>
+    const getImg = document.querySelector('img');
+    console.log(getImg);
+
+    function showPass(){
+      const getPasswordInput = document.querySelector('#password');
+      if(getPasswordInput.type === 'password'){
+        getPasswordInput.type = 'text';
+      }
+      else{
+        getPasswordInput.type = 'password'
+      }
+      
+      
+    }
+    
+    getImg.addEventListener('click', showPass)
+
+
+  </script>
 </body>
 </html>
