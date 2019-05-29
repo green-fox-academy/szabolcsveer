@@ -39,11 +39,13 @@
   
   <script>
       const getForm = document.querySelector('form');
-      const getBtn = document.querySelector('#sign-up');
       
       const getDog = document.querySelector('#dog');
       const getCat = document.querySelector('#cat');
+      const getGoldfish = document.querySelector('#goldfish')
       const getYes = document.querySelector('#yes');
+      const getNo = document.querySelector('#no');
+      const getBtn = document.querySelector('#sign-up');
       const iLoveCats = document.querySelector('#ilovecats')
       const buttons = document.querySelector('.btns');
 
@@ -53,6 +55,12 @@
         }
         if(getYes.checked){
           iLoveCats.disabled = false
+        }
+        if(getNo.checked && getGoldfish.checked){
+          getBtn.disabled = false
+          getBtn.addEventListener('click', sigh = () =>{
+            alert("Sigh, we still added you to the cat facts list")
+          } )
         }
       }
       getForm.addEventListener('click',enableButtons)
