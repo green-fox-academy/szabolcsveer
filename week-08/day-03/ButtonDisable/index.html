@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Button Disabled</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form action="/" method="GET">
+    <h1>What is your favorite pet?</h1>
+    <div>
+      <input type="radio" name="pets" id="dog">
+      <label for="dog">Dog</label>
+    </div>
+    <div>
+      <input type="radio" name="pets" id="cat">
+      <label for="cat">Cat</label>
+    </div>
+    <div>
+      <input type="radio" name="pets" id="goldfish">
+      <label for="goldfish">Viktor the goldfish</label>
+    </div>
+    <h1>Do you want to sign up for cat facts?</h1>
+    <div>
+      <input type="radio" name="yesno" id="yes">
+      <label for="yes">Yes</label>
+    </div>
+    <div>
+      <input type="radio" name="yesno" id="no">
+      <label for="no">No</label>
+    </div>
+    <div class="btns">
+      <button id="ilovecats" disabled>I love cats</button>
+      <button id="sign-up" disabled>Sign Up</button>
+    </div>
+  </form>
+  
+  <script>
+      const getForm = document.querySelector('form');
+      const getBtn = document.querySelector('#sign-up');
+      
+      const getDog = document.querySelector('#dog');
+      const getCat = document.querySelector('#cat');
+      const getYes = document.querySelector('#yes');
+      const iLoveCats = document.querySelector('#ilovecats')
+      const buttons = document.querySelector('.btns');
+
+      const enableButtons = () => {
+        if(getDog.checked || getCat.checked ){
+          getBtn.disabled = false
+        }
+        if(getYes.checked){
+          iLoveCats.disabled = false
+        }
+      }
+      getForm.addEventListener('click',enableButtons)
+      
+      const logText = () =>{
+        alert("Thank you, you've successfully signed up for cat facts")
+        
+      }
+      buttons.addEventListener('click', logText)
+      
+
+
+  </script>
+</body>
+</html>
