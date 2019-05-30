@@ -1,0 +1,54 @@
+body {
+  background-color: blueviolet;
+  display: flex;
+  justify-content: center;
+}
+
+table {
+  border-radius: 5px;
+  width: 70%;
+  /* justify-content: center; */
+  /* align-content: center; */
+  border: none;
+  border-collapse: collapse;
+  border-style: hidden;
+}
+
+table td,table th {
+  border: 2px solid grey;
+}
+
+thead {
+  background-color: black;
+  color: white;
+}
+
+thead td{
+  font-size: 28px;
+  color: grey;
+}
+tr {
+  color: darkslategray;
+}
+
+
+td {
+  height: 2rem;
+  width: 6rem;
+  padding: 20px;
+}
+
+tbody {
+  font-size: 20px;
+  border: none;
+}
+td[data-currency|="$"]::before{
+  content: "$ ";
+}
+table tbody tr:nth-child(odd) {
+  background-color: aqua;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: white;
+}
