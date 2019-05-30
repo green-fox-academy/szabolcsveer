@@ -1,0 +1,16 @@
+div{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  
+}
+
+button{
+  margin: 10px;
+  width: 8rem;
+  height: 4rem;
+}
+
+button:hover{
+  
+}
