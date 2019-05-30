@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Giphy API</title>
+</head>
+<body>
+  
+
+<div class="main">
+
+</div>
+
+
+
+
+  <script>
+
+    let main = document.querySelector('.main');
+
+      let request = new XMLHttpRequest();
+      request.open('GET',"https://api.giphy.com/v1/gifs/search?api_key=fFElqBA60HDAFQ42gN1t9lCSBUnBqa6M&q=programmers&limit=16&offset=0&rating=G&lang=en")
+      request.onload = function() {
+        var data = JSON.parse(request.response);
+        console.log(data);
+        renderHTML(data);
+      };
+  
+      request.send();
+
+    
+    
+  </script>
+</body>
+</html>

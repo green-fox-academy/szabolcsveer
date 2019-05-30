@@ -28,7 +28,7 @@ app.get('/doubling',(req,res) =>{
     "error": "Please provide an input!"
   })
 }
-});
+}); 
 
 app.get('/greeter', (req,res)=>{
   if(req.query.name && req.query.title){

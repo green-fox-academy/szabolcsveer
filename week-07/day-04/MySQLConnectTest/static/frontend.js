@@ -14,18 +14,21 @@ xhr.onload = function(){
 xhr.send();
 
 function renderHTML(data){
-  for(let i=0;i<data.length;i++){
   let tableBody = document.querySelector("tbody");
+
+  for(let i=0;i<data.length;i++){
+
   let createTr = document.createElement("tr");
-  let createTrAuthor = document.createElement("tr");
-  let td = document.createElement('td');
-  let tdAuthor = document.createElement('td')
-  td.textContent = data[i].aut_name;
-  tdAuthor.textContent = data[i].book_name;
-  createTr.appendChild(td);
-  createTrAuthor.appendChild(tdAuthor);
+  let titleTd = document.createElement('td');
+  let authorTd = document.createElement('td');
+
+  titleTd.textContent = data[i].book_name;
+  authorTd.textContent = data[i].aut_name;
+  
+  createTr.appendChild(titleTd);
+  createTr.appendChild(authorTd);
   tableBody.appendChild(createTr);
-  tableBody.appendChild(createTrAuthor);
+  
   }
     
 }

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" >
+  <title>List Manager</title>
+</head>
+<style>
+body{
+  display: flex;
+  
+
+}
+ul{
+  border: 1px solid black;
+  list-style-type: none;
+  display: inline-block;
+  width: 100%;
+  margin: 10px;
+}
+li{
+  display: table;
+}
+
+</style>
+<body>
+  <!-- Do not modify this file -->
+  <!--
+    1, Build up the necessary structure with JavaScript (try to use semantically correct elements)
+    2, Achive the same design by css
+    3, Try not to use css classes
+    4, Add some functionality to the buttons
+        - If "Up" is clicked the selection should move up by one
+        - If "Down" is clicked the selection should move down by one
+        - If "X" is clicked the selected item should be removed and the first item should be selected
+        - If ">" is clicked the selected item should be moved to the right side and the first item on the left side should be selected
+    5, Check all the edge cases, no error should be printed to the console
+   -->
+  <script type="text/javascript">
+    // FISRT LIST
+    const getBody = document.querySelector('body');
+    const ul = document.createElement('ul');
+    getBody.appendChild(ul);
+    
+      const liBread= document.createElement('li');
+      ul.appendChild(liBread).innerHTML = 'bread';
+      liBread.onclick = () =>{
+        liBread.style.backgroundColor = 'lightgrey';
+      }
+
+      const liMilk= document.createElement('li');
+      ul.appendChild(liMilk).innerHTML = 'milk';
+      liMilk.onclick = () =>{
+        liMilk.style.backgroundColor = 'lightgrey';
+      }
+
+      const liOrange= document.createElement('li');
+      ul.appendChild(liOrange).innerHTML = 'orange';
+
+      const liTomato= document.createElement('li');
+      ul.appendChild(liTomato).innerHTML = 'tomato';
+    
+    //SECOND LIST
+    
+    const ul2 = document.createElement('ul');
+    getBody.appendChild(ul2);
+
+    const up = document.createElement('button');
+    ul2.appendChild(up).innerHTML = 'Up';
+    up.onclick = () =>{
+
+    }
+
+    const biggerThan = document.createElement('button');
+    ul2.appendChild(biggerThan).innerHTML = '>';
+
+    const X = document.createElement('button');
+    ul2.appendChild(X).innerHTML = 'X';
+
+    const down = document.createElement('button');
+    ul2.appendChild(down).innerHTML = 'Down';
+
+    //RESULT LIST
+    const ul3 = document.createElement('ul');
+    getBody.appendChild(ul3);
+    
+  
+  </script>
+</body>
+</html>
+

@@ -4,7 +4,7 @@
 
 const fs = require('fs');
 let duplicatedText = fs.readFileSync('duplicated-chars.txt','utf-8').split('\n')
-
+// console.log(duplicatedText)
 function decryptDoubles(duplicatedText){
   let decrypted = '';
   for(let i = 0 ; i < duplicatedText.length; i++){

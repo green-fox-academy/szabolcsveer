@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Workshop: onclick</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      div {
+        height: 100vh;
+      }
+      .party {
+        background: url(https://media.giphy.com/media/4c4jQPdVv381G/giphy.gif);
+      }
+      img {
+        height: 100vh;
+        width: 200vw;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <button>Party</button>
+    </div>
+
+    <!-- You can work in the html or in a separate js file. Like:
+    <script>
+      Turn the party on and off by clicking the button. (the whole page)
+    </script> -->
+    OR
+    <script >
+
+      const btn = document.querySelector('button');
+      const div = document.querySelector('div');
+      console.log(btn)
+      const party = false;
+      
+      btn.onclick = () => {
+        if(party === false){
+          img = document.createElement('img')
+          console.log(img)
+          div.appendChild(img)
+          img.className = 'party'
+          party = true;
+        }
+        else if(party === true){
+          div.classList.remove(img);
+          party = false;
+        }
+      }
+      
+
+    </script>
+  </body>
+</html>

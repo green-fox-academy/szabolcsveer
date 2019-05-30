@@ -1,0 +1,27 @@
+body{
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  background-color: darkcyan;
+}
+
+#main{
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+#inner{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+#right{
+  transform: scale(-1);
+}
+
+.middlepic{
+  width: 720px;
+  height: 480px;
+}

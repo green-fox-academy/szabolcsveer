@@ -11,6 +11,7 @@ app.get('/', (req, res) => {
   if(req.query.name === undefined){
     name = 'Guest'
   }
+  
   let welcomeMsg = {greeting:`Welcome back ${name}!`};
   res.render('home', welcomeMsg)
 })

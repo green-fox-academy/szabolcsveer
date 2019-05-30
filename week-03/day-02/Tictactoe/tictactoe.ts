@@ -69,10 +69,10 @@ function ticTacResult(filename){
 
 
 
-// console.log(ticTacResult('wino.txt'))
+console.log(ticTacResult('wino.txt'))
 // Should print "O"
 
-ticTacResult('winx.txt')
+// ticTacResult('winx.txt')
 // Should print "X"
 
 // console.log(ticTacResult('draw.txt'))

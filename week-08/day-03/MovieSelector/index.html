@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MOVIE SELECTOR</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form action="/" method="get">
+    <legend>Movie Selector</legend>
+    <select name="selector" id="genre">
+      <option value="">Select a genre</option>
+      <option class="sci-fi" value="sci-fi">Sci-fi</option>
+      <option class="drama" value="drama">Drama</option>
+      <option class="comedy" value="comedy">Comedy</option>
+    </select>
+    <select name="selector" id="movie">
+      <option value="">Select a movie</option>
+      <option class="sci-fi" value="sci-fi">Moon</option>
+      <option class="sci-fi" value="sci-fi">2001: A Space Odyssey</option>
+      <option class="sci-fi" value="sci-fi">Contact</option>
+      <option class="drama" value="drama">There Will Be Blood</option>
+      <option class="drama" value="drama">American Beauty</option>
+      <option class="drama" value="drama">Airplane!</option>
+      <option class="comedy" value="comedy">Deadpool</option>
+      <option class="comedy" value="comedy">Wayne's World</option>
+    </select>
+  </form>
+  <script>
+
+    const selectedGenres = document.querySelector('#genre');
+    
+    const movie = document.querySelector('#movie');
+    const scifi = document.querySelector('.sci-fi');
+    for(let i = 0; i< movie.length;i++){
+    movies = movie[i]
+      
+    }
+
+    function whichGenre(e){
+      for(let i of movie){
+        if(!e.path[0].value === movies.value){
+       
+        }
+      }
+      console.log(e.path[0].value)
+      
+    }
+
+    
+    selectedGenres.addEventListener('click',whichGenre)
+  
+  </script>
+</body>
+</html>

@@ -42,10 +42,12 @@ mySharpieArmy: string[]= [];
       
     }
   }
-  removeTrash(){
-    if(this.inkAmount < 0){
-      // delete this.
-    }
+  removeTrash():{
+   this.mySharpieArmy = this.mySharpieArmy.filter(function(v,i,a){
+     if(this.inkAmount > 0){
+       return
+     }
+   })
   }
 }
 let first = new SharpieSet('Blue',1)
@@ -59,6 +61,8 @@ second.createSharpie('second')
 first.countUsable()
 second.countUsable()
 console.log(first);
+console.log(second);
+second.removeTrash()
 console.log(second);
 
 // console.log(mySharpieArmy);

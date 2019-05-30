@@ -13,6 +13,5 @@
     <li><%= todo[i] %></li>
    <% } %>
   </ul>
-  
 </body>
 </html>
