@@ -1,0 +1,22 @@
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10%;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+legend{
+  text-align: center;
+}
+button{
+  margin: 10px;
+  width: 20em;
+  height: 4em;
+}
+body{
+  background-color: aquamarine;
+}
