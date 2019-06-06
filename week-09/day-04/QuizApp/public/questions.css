@@ -1,0 +1,31 @@
+form{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+input{
+  
+}
+.manage{
+  display: flex;
+  justify-content: center;
+}
+.create{
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  /* align-content: center; */
+  flex-direction: column;
+}
+.create div{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+.answers{
+  padding: 10px 10px 10px 10px;
+  display: flex;
+  justify-items: center;
+}

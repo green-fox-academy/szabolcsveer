@@ -12,24 +12,45 @@
       <legend>
         Manage Questions
       </legend>
-      <legend>Create a new questions</legend>
       <table>
         <tr></tr>
+        <button>delete</button>
         <tr></tr>
+        <button>delete</button>
         <tr></tr>
       </table>
     </div>
-    <div class="">
-      <form>
-
-        <legend>Create a new quesiton</legend>
-        <input type="text" name="question" id="questions">
+    <div class="create">
+      
+        <legend>Create a new question</legend>
+        <input type="text" name="question" id="questions" placeholder="Type your question here">
         <label>Answers</label>
-        <label for="">#1</label>
-        <input type="text" name="answer1" id="answer1" placeholder="Type your answer here">
-        <input type="radio" name="as1" id="as1">
+        <div class="answers">
+          <label for="">#1</label>
+          <input type="text" name="answer1" id="answer1" placeholder="Type your answer here">
+          <input type="radio" name="as1" id="as1">
+        </div>
         <hr>
-      </form>
+        <div class="answers">
+          <label for="">#2</label>
+          <input type="text" name="answer2" id="answer2" placeholder="Type your answer here">
+          <input type="radio" name="as2" id="as2">
+        </div>
+        <hr>
+        <div class="answers">
+          <label for="">#3</label>
+          <input type="text" name="answer3" id="answer3" placeholder="Type your answer here">
+          <input type="radio" name="as3" id="as3">
+        </div>
+        <hr>
+        <div class="answers">
+          <label for="">#4</label>
+          <input type="text" name="answer4" id="answer4" placeholder="Type your answer here">
+          <input type="radio" name="as4" id="as4">
+        </div>
+        <hr>
+        <button type="submit">SUBMIT</button>
+        <a href="/public/game.html">go back to the game</a>
     </div>
   </body>
 </html>
