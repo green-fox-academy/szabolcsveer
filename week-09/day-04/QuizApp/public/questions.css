@@ -1,22 +1,31 @@
+body {
+  background-color: aqua;
+  margin: 10%;
+}
 form{
   display: flex;
   justify-content: center;
   align-content: center;
   flex-direction: column;
 }
-input{
-  
-}
+
 .manage{
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  width: 60%;
+  margin: 0 auto;
 }
 .create{
-  width: 60%;
+  /* width: 100%; */
   display: flex;
   justify-content: center;
   /* align-content: center; */
   flex-direction: column;
+  margin: 0 auto;
+  background-color: white;
+  padding: 80px;
+  border-radius: 5px;
 }
 .create div{
   display: flex;
@@ -24,8 +33,52 @@ input{
   align-content: center;
   flex-direction: column;
 }
-.answers{
-  padding: 10px 10px 10px 10px;
+.create button{
+  width: 180px;
+  text-align: center;
+  background-color: blue;
+  border-style: none;
+  height: 50px;
+  color: white;
+  box-shadow: 3px 10px 5% #333333;
+}
+.submit{
   display: flex;
-  justify-items: center;
+  margin: 0 auto;
+}
+
+.answers div {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  margin: 5px;
+  
+}
+legend{
+  text-align: center;
+  font-size: 34px;
+}
+
+h1{
+  text-align: center;
+  font-size: 34px;
+  
+}
+
+input[type=text]{
+  width: 100vw;
+}
+a{
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  text-decoration: none;
+  font-size: 18px;
+}
+hr{
+  border-style: solid;
+  color: lightblue;
+  width: 100%;
+  border-width: 0.8px;
 }
