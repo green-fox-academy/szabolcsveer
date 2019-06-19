@@ -6,11 +6,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { WeatherTileComponent } from './weather-tile/weather-tile.component';
 import {RetrieveWeatherService} from './retrieve-weather.service';
+import { SearchfieldComponent } from './searchfield/searchfield.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    WeatherTileComponent
+    WeatherTileComponent,
+    SearchfieldComponent
   ],
   imports: [
     BrowserModule,

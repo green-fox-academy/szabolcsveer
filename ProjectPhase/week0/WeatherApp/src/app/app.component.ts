@@ -10,12 +10,11 @@ import { RetrieveWeatherService } from './retrieve-weather.service';
 export class AppComponent {
   title = 'weather-app';
 
-  constructor(private service: RetrieveWeatherService, private http: HttpClient){
-    service.printToConsole("Got SERVICE!");
+  constructor(private http: HttpClient){
   }
 
   ngOnInit() {
-    let obs = this.http.get('http://api.openweathermap.org/data/2.5/forecast?id=524901&APPID=7ac0e4ff0e3d1eaa97329be8967b8335');
+    let obs = this.http.get('http://api.openweathermap.org/data/2.5/weather?q=London&APPID=7ac0e4ff0e3d1eaa97329be8967b8335');
     obs.subscribe((response) => console.log(response));
   }
 
