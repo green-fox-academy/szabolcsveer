@@ -4,10 +4,10 @@
 
 export const environment = {
   production: false,
-  apiURL: `http://api.openweathermap.org/data/2.5/weather?q=London&APPID=7ac0e4ff0e3d1eaa97329be8967b8335`,
-  apiKey: `7ac0e4ff0e3d1eaa97329be8967b8335`
+  apiURL: `http://api.openweathermap.org/data/2.5/weather?q=`,
+  apiKey: `&APPID=7ac0e4ff0e3d1eaa97329be8967b8335`
 };
-
+// const weatherUrl = `http://api.openweathermap.org/data/2.5/weather?q=${cityName}&APPID=7ac0e4ff0e3d1eaa97329be8967b8335`;
 /*
  * For easier debugging in development mode, you can import the following file
  * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
