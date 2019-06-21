@@ -12,13 +12,12 @@ import { NgModel } from '@angular/forms';
 export class SearchComponent implements OnInit {
 
   cityName: string;
-
   constructor(private service: WeatherService) {
   }
 
   ngOnInit() {
   }
-
+  
   search() {
     console.log("Hello");
     console.log(this.cityName);

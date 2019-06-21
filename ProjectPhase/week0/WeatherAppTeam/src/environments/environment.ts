@@ -5,7 +5,8 @@
 export const environment = {
   production: false,
   apiURL: `http://api.openweathermap.org/data/2.5/weather?q=`,
-  apiKey: `&APPID=7ac0e4ff0e3d1eaa97329be8967b8335`
+  apiKey: `&APPID=7ac0e4ff0e3d1eaa97329be8967b8335`,
+  pictureLink: `http://openweathermap.org/img/w/`
 };
 // const weatherUrl = `http://api.openweathermap.org/data/2.5/weather?q=${cityName}&APPID=7ac0e4ff0e3d1eaa97329be8967b8335`;
 /*

@@ -1,0 +1,24 @@
+h1{
+  color: black;
+}
+.container{
+  display: flex;
+  justify-content: center;
+}
+.tile{
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  border-radius: 6px;
+  align-content: center;
+  font-family: 'Lato', sans-serif;
+  max-width: 45vw;
+  box-shadow: 8px 5px 5px  rgba(25, 84, 88, 0.4); 
+}
+.tile > * {
+  padding: 10px;
+}
+img{
+  width: 100px;
+  height: 100px;
+}
